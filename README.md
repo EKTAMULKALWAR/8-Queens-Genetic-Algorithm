@@ -20,31 +20,10 @@ Survivor Selection: Merge offspring with the existing population and keep the be
 Termination: Stop if an optimal solution is found or after 100 generations.
 2.2 Problem Representation
 Each board is represented as a permutation of numbers [1,2,3,4,5,6,7,8], where the ith index represents the row, and the value represents the column position of a queen.
-Algorithm Parameters
-Parameter
-Value
-Population Size
-100
-Selection Method
-Tournament Selection (best 2 of 5)
-Crossover Method
-Order Crossover (OX)
-Mutation Method
-Swap Mutation
-Mutation Probabilities
-60%, 80%, 100%
-Generations
-Up to 100
-Fitness Function
-Count of attacking pairs
-Termination Condition
-Solution found or 100 generations
-
 
 3. Results and Analysis
-In fig 1.1  the result for N = 8 i.e 8 * 8 chess board with the population size 100, tournament selection, order crossover, and  mutation probabilities (0.6,0.8,1.0) is as follows:
+the graph displays the result.
 
-                  Fig 1.1 : Jupyter Notebook Results from the genetic algorithm  
 3.1 Mutation Probability = 60%
 Found an optimal solution in 2 generations.
 Initial average fitness = 5.12 (high number of conflicts).
@@ -75,28 +54,6 @@ Despite randomness, it quickly converged to an optimal state.
 
 
 4. Visualization & Analysis
-
-
-Mutation Rate
-Generations Needed
-Best Fitness
-60%
-2
-0
-80%
-9
-0
-100%
-3
-0
-
-
-Graph Analysis
-In fig 1.2 the graph illustrates the best fitness value and the population's average fitness over time 
-				
-			
-		
-                  Fig 1.2 : Jupyter Notebook Graph Result  from three Mutation Probabilities 
 
 Mutation 60% (🔵): Steep initial drop, quick solution but might not always generalize well.
 Mutation 80% (🟠): Gradual decline, requiring more generations.
